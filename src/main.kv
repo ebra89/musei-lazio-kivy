@@ -1,0 +1,10 @@
+#:include museoMapView.kv
+
+
+BoxLayout:
+    orientation: 'vertical'
+    MDToolbar:
+        title: "Ceca Comune"
+        right_action_items: [['magnify', lambda x: app.search_menu.open()]]
+    MuseiMapView:
+        id: mapview
